@@ -1,0 +1,26 @@
+{
+  "name": "nodewithmongo",
+  "version": "1.0.0",
+  "description": "Node (express) backend UserManagement Basics with MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node -r ./node_modules/dotenv/config src/index.js",
+    "build": "babel src -d dist",
+    "serve": "node -r dotenv/config dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "nodemon": "^3.0.1"
+  }
+}
