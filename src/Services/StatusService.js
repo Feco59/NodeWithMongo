@@ -18,13 +18,9 @@ export const error = {
     message: 'Input is missing.',
     createMessage: param => `${param} required.`,
   },
-  USERNAME_ALREADY_TAKEN: {
+  EMAIL_ALREADY_TAKEN: {
     statusCode: 409,
-    message: 'Username is already taken.',
-  },
-  ROOM_ALREADY_BOOKED: {
-    statusCode: 406,
-    message: 'The room is already booked',
+    message: 'E-mail is already taken.',
   },
   FIELD_LENGTH_ERROR: {
     statusCode: 406,
