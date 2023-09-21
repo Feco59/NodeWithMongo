@@ -22,10 +22,11 @@ const UserService = {
   removeUser: async param => {
     
     const options = { runValidators: true };
-    const id = { id: param.id };
-    const update = { isDeleted: true };
+    const id = { _id: param.id };
+    const update = { $set: {isDeleted: true} };
 
-    await User.updateOne(id, update, options);
+    const deleted = await User.updateOne(id, update, options);
+    
 
     return "User deleted"
   }
